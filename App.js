@@ -1,18 +1,16 @@
-import {React, useEffect} from 'react';
+import { React, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Image, Text, View } from 'react-native';
+import InfoEquip from "./components/InfoEquip";
+import InfoPartit from './components/InfoPartit';
 const App = () => {
-
-
-
-// Pantalla Principal
+  // Pantalla Principal
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Text style={styles.titol}>Llistat de partits:</Text>
-      <View style={{flex:0.25}}>
-        <Text style={{fontSize:18}}>Valencia</Text>
-      </View>
+      <InfoPartit equip1 = "Levante" equip2="Girona" arbitro= "Negreira"/>
+      <InfoPartit equip1 = "Elche" equip2="Valencia" arbitro= "Negreira Jr"/>
     </View>
   );
 };
@@ -20,7 +18,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin:5,
+    margin: 5,
     padding: 5,
     backgroundColor: "#fff",
   },
