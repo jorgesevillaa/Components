@@ -22,14 +22,14 @@ const InfoEquip = (props) => {
 const styles = StyleSheet.create({
     caixaGroga: {
     backgroundColor: "yellow",
+    width:"40%",
     height: 150,
-    width: "45%",
     alignItems: "center",
     justifyContent: "center",
     borderColor: "black",
     borderRadius: 10,
     borderWidth: 2,
-    marginHorizontal: 5,
+    marginHorizontal: 10,
     },
     gran: {
         fontSize: 20
